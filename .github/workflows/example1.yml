@@ -14,4 +14,6 @@ jobs:
       - name: Run a one-line script
         shell: bash
         run: echo Hello, world!
+      - name: Clean Workspace
+        run: sudo rm -rf $GITHUB_WORKSPACE
 
