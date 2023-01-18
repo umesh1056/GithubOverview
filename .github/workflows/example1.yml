@@ -13,7 +13,8 @@ jobs:
     steps:
       - name: Run a one-line script
         shell: bash
-        run: echo Hello, world!
-      - name: Clean Workspace
-        run: sudo rm -rf $GITHUB_WORKSPACE
+        run: |
+            echo "::group::My title"
+            echo "Inside group"
+            sudo rm -rf $GITHUB_WORKSPACE
 
